@@ -11,19 +11,19 @@ export type Database = {
     Tables: {
       tasks: {
         Row: {
-          created_at: string
           id: number
           text: string | null
+          update_at: string
         }
         Insert: {
-          created_at?: string
           id?: number
           text?: string | null
+          update_at?: string
         }
         Update: {
-          created_at?: string
           id?: number
           text?: string | null
+          update_at?: string
         }
         Relationships: []
       }
